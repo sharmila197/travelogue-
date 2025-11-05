@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - The World Travel Guy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>The World Travel Guy</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="payment">
+    <h2>Payment Details</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="card">Card Number</label>
+      <input type="text" id="card" name="card" placeholder="xxxx xxxx xxxx xxxx" required><br><br>
+
+      <label for="exp">Expiry Date</label>
+      <input type="month" id="exp" name="exp" required><br><br>
+
+      <label for="cvv">CVV</label>
+      <input type="password" id="cvv" name="cvv" maxlength="3" required><br><br>
+
+      <label for="method">Payment Method</label>
+      <select id="method" name="method">
+        <option>Credit Card</option>
+        <option>Debit Card</option>
+        <option>UPI</option>
+        <option>PayPal</option>
+      </select><br><br>
+
+      <button type="submit">Pay Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 The World Travel Guy | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
