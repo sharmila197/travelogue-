@@ -8,19 +8,22 @@
 </head>
 <body>
   <header>
-    <h1>The World Travel Guy</h1>
+    <h1>Explore the World With Us</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="travel.html">Home</a></li>
+        <li><a href="destination.html">Destinations</a></li>
         <li><a href="categories.html">Categories</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html">Packages</a>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="payment">
+    <a href="travel.html"><button class="close-btn">X</button></a>
     <h2>Payment Details</h2>
+
     <form>
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required><br><br>
@@ -34,7 +37,7 @@
       <label for="exp">Expiry Date</label>
       <input type="month" id="exp" name="exp" required><br><br>
 
-      <label for="cvv">CVV</label>
+      <label for="cvv">Password</label>
       <input type="password" id="cvv" name="cvv" maxlength="3" required><br><br>
 
       <label for="method">Payment Method</label>
@@ -44,8 +47,9 @@
         <option>UPI</option>
         <option>PayPal</option>
       </select><br><br>
-
+      <div class="wrap-btn">
       <button type="submit">Pay Now</button>
+      </div>
     </form>
   </section>
 
